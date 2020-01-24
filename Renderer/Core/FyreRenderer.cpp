@@ -35,13 +35,6 @@ int Fyre::Renderer::SetupWindow(Fyre::Window::Settings settings,
     return 0;
 }
 
-int Fyre::Renderer::RenderFrame() {
-    glClear(GL_COLOR_BUFFER_BIT);
-    glfwSwapBuffers(window.GetWindow());
-
-    return 0;
-}
-
 int Fyre::Renderer::DestroyContext() {
     glfwTerminate();
     return 0;
@@ -53,4 +46,14 @@ bool Fyre::Renderer::ShouldCloseWindow() {
 
 Fyre::Window &Fyre::Renderer::GetWindowContext() {
     return window;
+}
+
+int Fyre::Renderer::ClearRenderFrameBuffers() {
+    glClear(GL_COLOR_BUFFER_BIT);
+    return 0;
+}
+
+int Fyre::Renderer::SwapRenderFrameBuffers() {
+    glfwSwapBuffers(window.GetWindow());
+    return 0;
 }

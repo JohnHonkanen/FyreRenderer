@@ -11,7 +11,8 @@ namespace Fyre {
     class Renderer {
     public:
         int Init(Window::Settings settings);
-        int RenderFrame();
+        int ClearRenderFrameBuffers();
+        int SwapRenderFrameBuffers();
         int DestroyContext();
         bool ShouldCloseWindow();
 

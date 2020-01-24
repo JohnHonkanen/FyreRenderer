@@ -5,6 +5,8 @@
 #include <iostream>
 #include <GLFW/glfw3.h>
 #include "Renderer/Core/FyreRenderer.h"
+#include "Renderer/Core/Mesh/Mesh.h"
+#include "Renderer/Core/Shader/ShaderManager.h"
 
 void processInput(GLFWwindow *window)
 {
@@ -22,6 +24,10 @@ int main(){
         return 1;
     };
 
+    Fyre::ShaderManager shaderManager;
+    shaderManager.AddShader("basic shader", "Renderer/Assets/vertex.vs", "Renderer/Assets/fragment.fs");
+    Fyre::Mesh mesh;
+
     // render loop
     // -----------
     while (!fyreRenderer.ShouldCloseWindow())
@@ -32,7 +38,10 @@ int main(){
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
-        fyreRenderer.RenderFrame();
+        fyreRenderer.ClearRenderFrameBuffers();
+        shaderManager.UseShader("basic shader");
+        mesh.Render();
+        fyreRenderer.SwapRenderFrameBuffers();
         glfwPollEvents();
 
     }
