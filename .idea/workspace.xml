@@ -2,8 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="Renderer" targetName="uninstall" />
       <config projectName="Renderer" targetName="Renderer" />
       <config projectName="Renderer" targetName="Demo" />
+      <config projectName="Renderer" targetName="glfw" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -12,7 +14,24 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8734cfbd-a182-469e-9872-111ca3c4f3db" name="Default Changelist" comment="" />
+    <list default="true" id="8734cfbd-a182-469e-9872-111ca3c4f3db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/honkanej.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderer/Core/FyreRenderer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderer/Core/FyreRenderer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderer/Core/window.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Renderer/Core/window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Renderer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Renderer.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/glfw-3.3.1/include/GLFW/glfw3.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/glfw/include/GLFW/glfw3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/glfw-3.3.1/include/GLFW/glfw3native.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/glfw/include/GLFW/glfw3native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/glfw-3.3.1/libs/win32/glfw3.lib" beforeDir="false" afterPath="$PROJECT_DIR$/libs/glfw/libs/win32/glfw3.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +45,12 @@
     <option name="installArgs" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-Renderer" />
+  </component>
   <component name="ProjectId" id="1WbyHXY7xarGZgqZkfiQL4ZoTBg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,7 +59,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager" selected="CMake Application.Demo">
@@ -43,7 +70,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Renderer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Renderer" TARGET_NAME="Renderer" CONFIG_NAME="Debug">
+    <configuration name="Renderer" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/Renderer" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Renderer" TARGET_NAME="Renderer" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Renderer" TARGET_NAME="glfw" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Renderer" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -51,6 +88,8 @@
     <list>
       <item itemvalue="CMake Application.Demo" />
       <item itemvalue="CMake Application.Renderer" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.glfw" />
     </list>
   </component>
   <component name="ServiceViewManager">
@@ -78,6 +117,7 @@
       <workItem from="1579432506077" duration="431000" />
       <workItem from="1579432947826" duration="1051000" />
       <workItem from="1579434008447" duration="4157000" />
+      <workItem from="1579611476341" duration="8587000" />
     </task>
     <servers />
   </component>
@@ -89,13 +129,15 @@
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
     <state x="2472" y="169" key="#Plugins/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579433998814" />
-    <state x="2599" y="232" key="#Renderer" timestamp="1579437349357">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state x="594" y="243" key="#Renderer" timestamp="1579612134290">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
+    <state x="594" y="243" key="#Renderer/0.23.1680.947@0.23.1680.947" timestamp="1579612134290" />
     <state x="2599" y="232" key="#Renderer/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579437349357" />
-    <state x="2334" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579433727039">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state x="362" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579611986331">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
+    <state x="362" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.947@0.23.1680.947" timestamp="1579611986331" />
     <state x="2334" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579433727039" />
     <state x="2614" y="272" key="EnvironmentVariablesDialog" timestamp="1579433952108">
       <screen x="1920" y="-10" width="1920" height="1040" />
@@ -105,29 +147,39 @@
       <screen x="1920" y="-10" width="1920" height="1040" />
     </state>
     <state x="2660" y="265" key="FileChooserDialogImpl/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579436851831" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1579438969279">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom" timestamp="1579867492594">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1579867492594" />
+    <state width="1315" height="253" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1579612081930" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579438969279" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1579438969279">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state width="1638" height="294" key="GridCell.Tab.0.center" timestamp="1579867492593">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1579867492593" />
+    <state width="1315" height="253" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1579612081930" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579438969279" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1579438969279">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state width="1638" height="294" key="GridCell.Tab.0.left" timestamp="1579867492592">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1579867492592" />
+    <state width="1315" height="253" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1579612081929" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579438969279" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1579438969279">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state width="1638" height="294" key="GridCell.Tab.0.right" timestamp="1579867492593">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1579867492593" />
+    <state width="1315" height="253" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1579612081930" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579438969279" />
-    <state x="2381" y="153" key="SettingsEditor" timestamp="1579436884099">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state x="403" y="171" key="SettingsEditor" timestamp="1579612008071">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
+    <state x="403" y="171" key="SettingsEditor/0.23.1680.947@0.23.1680.947" timestamp="1579612008071" />
     <state x="2381" y="153" key="SettingsEditor/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579436884099" />
-    <state x="2575" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1579434009660">
-      <screen x="1920" y="-10" width="1920" height="1040" />
+    <state x="573" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1579611477314">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="573" y="347" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1579611477314" />
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog/1920.-10.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579432509189" />
     <state x="2575" y="334" key="com.intellij.ide.util.TipDialog/1920.-10.1920.1040/0.0.1920.1040@1920.-10.1920.1040" timestamp="1579434009660" />
     <state x="2543" y="215" width="672" height="678" key="search.everywhere.popup" timestamp="1579437186457">

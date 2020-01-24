@@ -3,12 +3,26 @@ project(Renderer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/libs/glfw-3.3.1/include)
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
-add_library(Renderer SHARED library.cpp library.h)
+set (LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libs)
 
-target_link_libraries(Renderer ${CMAKE_CURRENT_SOURCE_DIR}/libs/glfw-3.3.1/libs/win32/glfw3.lib)
+
+
+add_subdirectory(${LIB_DIR}/glfw-3.3.1)
+
+add_library(Renderer SHARED ${CMAKE_CURRENT_SOURCE_DIR}/libs/glad/src/glad.c Renderer/Core/window.cpp Renderer/Core/window.h Renderer/Core/FyreRenderer.cpp Renderer/Core/FyreRenderer.h)
+
+include_directories(Renderer ${LIB_DIR}/glad/include)
 
 add_executable(Demo main.cpp)
-link_libraries(Demo Renderer)
+
+find_package(OpenGL REQUIRED)
+
+target_link_libraries(Renderer glfw OpenGL::GL)
+
+
+target_link_libraries(Demo Renderer)
 
